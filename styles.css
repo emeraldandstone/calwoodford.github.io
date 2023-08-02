@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --lcbase-colour: #00ffb3;
+  --lcbase-background: #4a4a4a;
+  background-color: #040404;
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  height: 100vh;
+  /* Changing the max-width has moved the sidebar to the left, rather than it being more central as before */
+  max-width: 1900px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px;
+}
+
+.sidebar {
+  flex: 0.2;
+  min-width: 250px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sidebarOption h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  margin-right: 20px;
+  color: white;
+}
+
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+.sidebarOption .material-icons {
+  padding: 20px;
+}
+
+.sidebarOption:hover {
+  background-color: var(--lcbase-background);
+  border-radius: 30px;
+  color: var(--lcbase-colour);
+  transition: color 100ms ease-out;
+  max-width: 100%;
+}
+
+.sidebarOption.active {
+  color: var(--lcbase-colour);
+}
+
+.sidebar__button {
+  width: 75%;
+  background-color: var(--lcbase-colour);
+  border: none;
+  color: rgb(4, 4, 4);
+  font-weight: 200;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  border-radius: 30px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.pad {
+  padding: 5%;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: none;
+  text-decoration-skip: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  text-decoration-color: none;
+  text-decoration-skip: none;
+  color: black;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  text-align: justify;
+  text-decoration: none;
+  text-decoration-color: none;
+  text-decoration-skip: none;
+}
+
+label {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: none;
+  text-decoration-skip: none;
+}
+
+form {
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  text-decoration-color: none;
+  text-decoration-skip: none;
+}
+
+button {
+  cursor: crosshair;
+}
+
+.feed {
+  flex: 1;
+
+  border-right: 1px solid var(--lcbase-background);
+  border-left: 1px solid var(--lcbase-background);
+  min-width: fit-content;
+  flex: 0.2;
+  overflow-y: scroll;
+  margin-left: 10px;
+  overflow: hidden; /* Hide scrollbar */
+}
+
+.feed__header {
+  position: sticky;
+  top: 0;
+  background-color: #040404;
+  z-index: 100;
+  padding: 15px 20px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 200;
+  color: white;
+}
+
+/* scrollbar starts*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3b3b3b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00ffb3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.displayimgs {
+  display: block;
+  margin-left: auto;
+}
+
+/* scrollbar ends*/
